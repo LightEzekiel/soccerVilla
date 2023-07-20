@@ -209,54 +209,178 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(padding: EdgeInsets.only(top: 30,left: 17,right: 17,bottom: 17),
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text('Live',
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 27,
-                    fontWeight: FontWeight.bold
-                  ),),
-                  Padding(padding: EdgeInsets.only(top: 25,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text('24',
+            Padding(
+              padding:
+                  EdgeInsets.only(top: 30, left: 17, right: 17, bottom: 17),
+              child: Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Live',
+                      textAlign: TextAlign.start,
                       style: TextStyle(
-                        color: Colors.amber,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w700
-                      ),),
-                      Container(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text('Wolves',
-                            style: TextStyle(color: Colors.white,
-                            fontSize: 17,
-                            fontWeight: FontWeight.w600),),
-                            Container(
-                              padding: EdgeInsets.only(left: 5,right: 5),
-                              child: Image.asset('assets/wolves.png',
-                              height: 38,
-                              width: 38,),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),)
-                ],
+                          color: Colors.white,
+                          fontSize: 27,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: 25,
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '24',
+                            style: TextStyle(
+                                color: Colors.amber,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w700),
+                          ),
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Wolves',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.only(left: 5, right: 5),
+                                  child: Image.asset(
+                                    'assets/wolves.png',
+                                    height: 38,
+                                    width: 38,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Text(
+                            '0:0',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.only(left: 5, right: 5),
+                                  child: Image.asset(
+                                    'assets/arsenal.png',
+                                    height: 38,
+                                    width: 38,
+                                  ),
+                                ),
+                                Text(
+                                  'Arsenal',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Icon(
+                            Icons.notifications_none_rounded,
+                            size: 26,
+                            color: Colors.white60,
+                          )
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        top: 25,
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '2',
+                            style: TextStyle(
+                                color: Colors.amber,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w700),
+                          ),
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Real Madrid',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.only(left: 5, right: 5),
+                                  child: Image.asset(
+                                    'assets/realmadrid.png',
+                                    height: 38,
+                                    width: 38,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Text(
+                            '0:0',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.only(left: 5, right: 5),
+                                  child: Image.asset(
+                                    'assets/barca.png',
+                                    height: 38,
+                                    width: 38,
+                                  ),
+                                ),
+                                Text(
+                                  'Barca',
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Icon(
+                            Icons.notifications_none_rounded,
+                            size: 26,
+                            color: Colors.white60,
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),)
+            ),
           ],
         ),
       ),
